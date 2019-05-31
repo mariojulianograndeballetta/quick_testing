@@ -16,8 +16,8 @@
 ### script error logging ###
 function logging {
 touch /tmp/maclookup.log
-chmod 775 /tmp/cleanup.log
-exec 2> /tmp/cleanup.log
+chmod 775 /tmp/maclookup.log
+exec 2> /tmp/maclookup.log
 }
 
 ### first commands ###
