@@ -1,0 +1,17 @@
+README
+
+This file explains how to use the maclookup bash script.
+
+If you are using MS Windows (uuuggghhh!) remember to “dos2unix” the script AFTER copying to the system that will run the script.
+
+You must be root to execute the script.  The script requires executable permissions to launch ( chmod a+x).
+
+The script will save output to file named “/tmp/maclookup.json”.  
+
+If the script fails, it will log errors to “/tmp/maclookup.log”.  If an invalid MAC address is input, the online API will return an error code and the script will exit.
+
+Any questions/support.....email:  mario.balletta@gmail.com
+
+
+
+
