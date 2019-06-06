@@ -1,0 +1,27 @@
+README
+
+This file explains how to use the maclookup bash script.
+
+Copy the script to the /tmp directory on your docker host (running linux).
+
+If you are using MS Windows (uuuggghhh!) top copy the file, please remember to "dos2unix" the script AFTER copying to the system that will run the script.
+
+After it is copied to your docker host running linux, issue this command to copy it to your container:
+
+docker cp /tmp/maclookup.sh  container:/tmp/maclookup.sh
+
+(container above is the name of your container, remember to change it)
+
+The copy command is also included in the Dockerfile.
+
+You must be root to execute the script.  The script requires executable permissions to launch ( chmod a+x).
+
+The script will save output to file named "/tmp/maclookup.json".  
+
+If the script fails, it will log errors to "/tmp/maclookup.log".  If an invalid MAC address is input, the online API will return an error code and the script will exit.
+
+Any questions/support.....email:  mario.balletta@gmail.com
+
+
+
+
